@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Quiz Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/style.css'>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="display">
+                <div class="display-object">
+                    <p id="scoreText" class="display-pre">
+                        Question
+                    </p>
+                    <div id="progressStatus">
+                        <div id="progressStatusComplete"></div>
+                    </div>
+                </div>
+               <div class="display-object">
+                   <p class="display-pre">
+                       Result
+                   </p>
+                   <h1 class="display-main-text" id="score">
+                       0
+                   </h1>
+               </div> 
+            </div>
+            <h2 id="question">What is the answer to this question</h2>
+            <div class="choice-container">
+                <p class="choice-pre">A</p>
+                <p class="choice-text" data-number="1">Choice</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-pre">B</p>
+                <p class="choice-text" data-number="2">Choice2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-pre">C</p>
+                <p class="choice-text" data-number="3">Choice3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-pre">D</p>
+                <p class="choice-text" data-number="4">Choice4</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div id="end" class="flex-center flex-column">
+            <h2 id="finalScore">0</h2>
+            <form class="end-form-container">
+                <h2 id="end-text">Enter You're Name for Pro Status</h2>
+                <input type="text" name="name" id="username" placeholder="Name Here">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="game.html" class="btn">Play Again</a>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div id="highScores" class="flex-center flex-column">
+            <h2 id="finalScore">Meet the Pros</h2>
+            <ul id="highScoresList"></ul>
+        </div>
+    </div>
+ 
+<script src='assets/script.js'></script>
+</body>
+</html>
